@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="wrapper"> 
+    <header>
+      <nav class="navbar"> 
+        <div class="brand">
+            <h2><span>Santiago</span> Cadena</h2>
+        </div>
+        <ul class="menu">
+          <li class="scroll-link" data-target="home"><a>Home</a></li>
+          <li class="scroll-link" data-target="about"><a>About me</a></li>
+          <li class="scroll-link" data-target="portafolio"><a>Portfolio</a></li>
+          <li class="scroll-link" data-target="contact"><a>Contanct</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+  </div>
+  <div class="home" id="home" >
+    <div  class="info-content">
+      <h1>Soy <span>Santiago</span> Cadena</h1>
+      <p>descripción</p>
+      <a download href="Hoja_de_Vida_Santiago_.pdf" target="_blank">
+        <button class="download-cv">Descargar CV</button> <!-- Agregar atributo de  download para que salga ventana emergente-->
+      </a>
+    </div>
+    <img src="./img/2-original.png" alt="Santiago Cadena Alvarez">
+  </div>
+  <div class="about" id="about">
+    <img src="./img/about.png" alt="about Santiago">
+    <div class="about-info">
+      
+      <h2>Sobre mi</h2>
+      <div class="divider"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam enim eius illum iusto optio? Laboriosam voluptates dolorem recusandae, perferendis nam dignissimos voluptatem reiciendis error sed quis ex tempora minima harum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorem vitae, ipsa veritatis ex cupiditate, iure eius nostrum voluptate quaerat sapiente adipisci? Asperiores dolores, perferendis temporibus itaque ratione eius adipisci!</p>
+      <button class="download-cv">Leer más</button>
+    </div>
+  
+  </div>
+  <div class="portfolio" id="portafolio">
+    <div class="portfolio-heading">
+      <h2>Mi Portafolio</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="container">
+      <div class="slider">
+      <div class="card">
+        <div class="card_img"></div>
+        <div class="card_title">
+          <h2> Nombre del proyecto</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis delectus, aliquid magni dolorum harum quasi rem, animi totam minima distinctio perferendis ullam, laborum ipsa nam repellendus recusandae. Labore, esse.</p>
+        </div>
+        <div class="card_project-link">
+          <a href="#">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img"></div>
+        <div class="card_title">
+          <h2> Nombre del proyecto</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis delectus, aliquid magni dolorum harum quasi rem, animi totam minima distinctio perferendis ullam, laborum ipsa nam repellendus recusandae. Labore, esse.</p>
+        </div>
+        <div class="card_project-link">
+          <a href="#">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img"></div>
+        <div class="card_title">
+          <h2> Nombre del proyecto</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis delectus, aliquid magni dolorum harum quasi rem, animi totam minima distinctio perferendis ullam, laborum ipsa nam repellendus recusandae. Labore, esse.</p>
+        </div>
+        <div class="card_project-link">
+          <a href="#">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </div>
+      </div>
+      <button class="prev-button">&#8249;</button>
+      <button class="next-button">&#8250;</button>
+      </div>
+    </div>
+  </div>
+  <div class="contact-section" id="contact">
+    <div class="contact-headings">
+      <h2>Contactame</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="container-contact">
+      <div class="contact-form">
+        <h4>Escribeme y te contacto</h4>
+        <form action="https://formsubmit.co/scadenaa@unal.edu.co" method="POST" class="form">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+          <textarea name="text" placeholder="Escribe tu mensaje"></textarea>
+          <button type="submit" class="btn-submit">
+            Envia el mensaje
+          </button>
+          <input type="hidden" name="_next" value="file:///C:/Users/santi/OneDrive/Escritorio/portfolio-tutorial-master/index.html#">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Santiago Cadena</h2>
+      <h5>Ingeniero</h5>
+    </div>
+    <div class="networks">
+      <a href="https://api.whatsapp.com/send?phone=573168548758"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/santiago-cadena-alvarez/"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:scadenaa@unal.edu.co"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
