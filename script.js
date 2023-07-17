@@ -10,7 +10,7 @@ const form=document.getElementById("form")
 async function handleSendEmail(event){
   event.preventDefault();
   const fd = new FormData(this)
-  const respone = await fetch('https://formspree.io/f/xjvqkvpn',{
+  const response = await fetch('https://formspree.io/f/xjvqkvpn',{
     method:'POST',
     body: fd,
     headers:{
