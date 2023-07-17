@@ -17,7 +17,7 @@ async function handleSendEmail(event){
       Accept: 'application/json'
     }
   })
-  if(Response.ok){
+  if(response.ok){
     this.reset()
     alert('Mensaje enviado')
   } else{
